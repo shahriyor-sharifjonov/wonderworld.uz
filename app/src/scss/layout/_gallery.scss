@@ -1,0 +1,21 @@
+.gallery{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 576px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  &__img{
+    width: calc(33.333% - 10px);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    &:first-child{
+      margin-bottom: 15px;
+    }
+  }
+}
