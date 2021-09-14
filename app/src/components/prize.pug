@@ -1,0 +1,27 @@
+mixin prize()
+  .prize
+    .prize__top 
+      h2.prize__title ПОДАРОК К ВАШЕМУ ЗАКАЗУ
+      p.prize__p Закажите набор для рисования сейчас же и получите в подарок набор фломастеров
+      img(src="images/intro.webp", alt="intro").prize__img
+    .offer
+      p.offer__title ПОДАРИТЕ СЧАСТЬЕ ВАШЕМУ РЕБЕНКУ
+      p.offer__p НАБОР ДЛЯ РИСОВАНИЯ ИЗ 208 ПРЕДМЕТОВ
+    .prize__body
+      img(src="images/intro.webp", alt="intro").prize__img
+      img(src="images/stars.svg", alt="star").prize__star
+      .intro__prices.prize__prices 
+        .intro__prices-item 
+          p.intro__prices-p.gray старая цена
+          p.intro__prices-desc.gray 349.000сум
+        .intro__prices-item 
+          p.intro__prices-p.blue новая цена
+          p.intro__prices-desc.blue 288.000сум
+      form(action="send.php" method="POST").prize__form
+        input(type="text" placeholder="Ваше имя" name="name").prize__input
+        input(type="tel" placeholder="Ваш телефон номер" name="phone").prize__input
+        button(type="submit").btn-purchase.intro__purchase-btn ЗАКАЗАТЬ <img src="images/right-arrow.svg" alt="">
+        .intro__purchase-row 
+          img(src="images/click.webp", alt="click").intro__purchase-img 
+          img(src="images/payme.webp", alt="payme").intro__purchase-img 
+          img(src="images/uzcard.webp", alt="uzcard").intro__purchase-img 
