@@ -6,4 +6,13 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Document
     link(rel="stylesheet", href="styles/index.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap")
   body 
+    include components/header.pug 
+    +header
+    main.main 
+      include components/intro.pug
+      +intro 
+    script(src="scripts/jquery.js") 
+    script(src="scripts/slick.min.js") 
+    script(src="scripts/index.js") 

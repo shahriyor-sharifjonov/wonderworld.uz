@@ -1,0 +1,120 @@
+.intro{
+  &__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__slider{
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: 0;
+    max-width: 768px;
+    width: 100%;
+    &-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+    }
+    &-img{
+      width: 45px;
+      aspect-ratio: 1/1;
+    }
+    & .slick{
+      &-list{
+        overflow: hidden;
+      }
+      &-track{
+        display: flex;
+        justify-content: center;
+      }
+      &-arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+        font-size: 0;
+      }
+      &-prev{
+        left: 25px;
+        width: 12px;
+        height: 12px;
+        background: url('../images/prev.svg');
+      }
+      &-next{
+        right: 25px;
+        width: 12px;
+        height: 12px;
+        background: url('../images/next.svg');
+      }
+    }
+  }
+  &__information{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    &-stars{
+      margin-bottom: 2px;
+    }
+    &-p_light{
+      font-weight: 500;
+      font-size: 9px;
+      line-height: 11px;
+      color: #A8A5A5;
+    }
+  }
+  &__prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    &-item{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      &:first-child{
+        margin-right: 20px;
+        @include media(343){
+          margin-right: 15px;
+        }
+      }
+    }
+    &-p{
+      font-weight: 300;
+      font-size: 8px;
+      line-height: 9px;
+      margin-right: 5px;
+      padding-bottom: 5px;
+      &.gray{
+        color: #7B7878;
+      }
+      &.blue{
+        color: #0057FF;
+      }
+    }
+    &-desc{
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 27px;
+      text-decoration-line: line-through;
+      @include media(400){
+        font-size: 18px;
+        line-height: 25px;
+      }
+      @include media(343){
+        font-size: 16px;
+      }
+      &.gray{
+        color: #7B7878;
+      }
+      &.blue{
+        color: #0057FF;
+      }
+    }
+  }
+}
