@@ -68,6 +68,21 @@
     &:not(:last-child){
       margin-bottom: 50px;
     }
+    &_2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0px 2px 4px 0px #00000040;
+      img{
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &:not(:last-child){
+        margin-bottom: 30px;
+      }
+    }
     &-title{
       margin-top: 14px;
       margin-bottom: 10px;
@@ -75,6 +90,14 @@
       font-size: 13px;
       line-height: 15px;
       color: #000000;
+      &_2{
+        margin-bottom: 9px;
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+      }
     }
     &-p{
       font-weight: normal;
@@ -84,6 +107,14 @@
       color: #6B6C6D;
       max-width: 309px;
       width: 100%;
+      &_2{
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #626263;
+        width: calc(100% - 30px);
+        margin-bottom: 25px;
+      }
     }
   }
   &-num{
