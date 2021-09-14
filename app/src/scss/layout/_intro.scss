@@ -9,7 +9,7 @@
     padding-left: 50px;
     padding-right: 50px;
     min-width: 0;
-    max-width: 768px;
+    max-width: 576px;
     width: 100%;
     &-item{
       display: flex;
@@ -159,6 +159,8 @@
     }
   }
   &__reviews{
+    max-width: 576px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
